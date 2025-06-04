@@ -1,0 +1,21 @@
+# Ignore user-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Ignore build outputs
+bin/
+obj/
+
+# Ignore Visual Studio files and folders
+.vs/
+.idea/
+*.vspscc
+*.vssscc
+
+# Ignore package files
+*.nupkg
+*.snupkg
+packages/
