@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MiniDownloadManager
 {
-    public partial class Form1 : Form
+    public partial class DownloaderForm : Form
     {
-        public Form1()
+        public DownloaderForm()
         {
             InitializeComponent();
         }

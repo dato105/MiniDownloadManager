@@ -5,12 +5,6 @@ VisualStudioVersion = 16.0.31321.278
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniDownloadManager", "MiniDownloadManager\MiniDownloadManager.csproj", "{47EEAD54-B1BF-4087-B81A-43852DD6B467}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Models", "Models", "{F857F1F6-43C4-4A64-A3E1-E332616487D7}"
-	ProjectSection(SolutionItems) = preProject
-		File.cs = File.cs
-		Validator.cs = Validator.cs
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

@@ -1,26 +1,26 @@
-﻿
+﻿using MiniDownloadManager.Models;
+using MiniDownloadManager.Services;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Net.Http;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+
 namespace MiniDownloadManager
 {
-    partial class Form1
+    public class DownloaderForm2:Form
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        private DataService _dataService;             
+        private List<FileItem> _fileList;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing)
+        public DownloaderForm2(string word)
         {
-            if (disposing && (components != null))
-            {
-                components.Dispose();
-            }
-            base.Dispose(disposing);
-        }
+            InitializeComponent();
+           
 
+        }
         #region Windows Form Designer generated code
 
         /// <summary>
@@ -29,13 +29,21 @@ namespace MiniDownloadManager
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // DownloaderForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.Name = "DownloaderForm";
+            this.Text = "DownloaderForm";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
     }
+
 }
 

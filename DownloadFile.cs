@@ -1,6 +1,6 @@
 namespace MiniDownloadManager.Models
 {
-    public class Validator
+    internal class Validator
     {
 
         public int disk { get; set; }
@@ -15,7 +15,7 @@ namespace MiniDownloadManager.Models
         }
     }
 
-    public class File
+    internal class File
     {
         public string Title { get; set; }
         public string ImageURL { get; set; }

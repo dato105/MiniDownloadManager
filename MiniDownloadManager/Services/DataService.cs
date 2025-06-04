@@ -25,13 +25,13 @@ namespace MiniDownloadManager.Services
             try
             {
                 string jsonString = await _httpClient.GetStringAsync(_jsonUrl);
-                var files = JsonConvert.DeserializeObject<List<File>>(jsonString);
+                var files = JsonConvert.DeserializeObject<List<FileItem>>(jsonString);
                 return files;
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Error fetching data:\n{ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return new List<File>();
+                return new List<FileItem>();
             }
         }
 

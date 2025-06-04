@@ -16,7 +16,7 @@ namespace MiniDownloadManager
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DownloaderForm());
+            Application.Run(new DownloaderForm("start"));
         }
     }
 }
