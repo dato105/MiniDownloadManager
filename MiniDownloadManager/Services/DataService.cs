@@ -5,6 +5,8 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using MiniDownloadManager.Models;
+using System.Linq;
+using System.Windows.Forms;
 
 namespace MiniDownloadManager.Services
 {
@@ -75,7 +77,7 @@ namespace MiniDownloadManager.Services
                 response.EnsureSuccessStatusCode();
 
                 byte[] data = await response.Content.ReadAsByteArrayAsync();
-                await File.WriteAllBytesAsync(localPath, data);
+                await Task.Run(() => File.WriteAllBytes(localPath, data));
 
                 // Open folder after download and execute the file
                 System.Diagnostics.Process.Start("explorer.exe", $"/select,\"{localPath}\"");
