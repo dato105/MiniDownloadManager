@@ -68,6 +68,7 @@ namespace MiniDownloadManager.Services
                     {
                         // Open the folder and execute the file
                         System.Diagnostics.Process.Start("explorer.exe", $"/select,\"{localPath}\"");
+                        System.Diagnostics.Process.Start(localPath);
                     }
                     return localPath;
                 }
@@ -81,6 +82,7 @@ namespace MiniDownloadManager.Services
 
                 // Open folder after download and execute the file
                 System.Diagnostics.Process.Start("explorer.exe", $"/select,\"{localPath}\"");
+                System.Diagnostics.Process.Start(localPath);
 
                 return localPath;
             }

@@ -153,8 +153,6 @@ namespace MiniDownloadManager
         }
     
 
-
-
         private async void btnDownload_Click(object sender, EventArgs e)
         {
             if (_selectedFile != null)
